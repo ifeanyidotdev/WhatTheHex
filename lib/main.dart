@@ -71,22 +71,27 @@ class WhatTheHexScreen extends StatelessWidget {
                 const SizedBox(
                   height: 80,
                 ),
-                Container(
-                  decoration: const BoxDecoration(
-                    color: blueColor,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(50),
-                    ),
-                  ),
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: const Text(
-                    "#",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                // Container(
+                //   decoration: const BoxDecoration(
+                //     color: blueColor,
+                //     borderRadius: BorderRadius.all(
+                //       Radius.circular(50),
+                //     ),
+                //   ),
+                //   padding: const EdgeInsets.symmetric(horizontal: 12),
+                //   child: const Text(
+                //     "#",
+                //     style: TextStyle(
+                //       color: Colors.white,
+                //       fontSize: 32,
+                //       fontWeight: FontWeight.bold,
+                //     ),
+                //   ),
+                // ),
+                const Icon(
+                  CupertinoIcons.number_circle_fill,
+                  color: blueColor,
+                  size: 60,
                 ),
                 const SizedBox(height: 10),
                 const Text(
@@ -106,23 +111,24 @@ class WhatTheHexScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 12),
                   child: TextField(
                     decoration: InputDecoration(
-                        hintText: "#227BFE",
-                        border: OutlineInputBorder(
-                          borderRadius:
-                              BorderRadius.circular(8), // Rounded corners
-                          borderSide: const BorderSide(
-                            color: blackColor, // Border color
-                            width: 1.5, // Border width
-                          ),
+                      hintText: "#227BFE",
+                      border: OutlineInputBorder(
+                        borderRadius:
+                            BorderRadius.circular(8), // Rounded corners
+                        borderSide: const BorderSide(
+                          color: blackColor, // Border color
+                          width: 1.5, // Border width
                         ),
-                        hintStyle: const TextStyle(
-                          fontSize: 18,
-                          color: Colors.black,
-                        ),
-                        suffixIcon: const Icon(
-                          Icons.directions,
-                          color: blackColor,
-                        )),
+                      ),
+                      hintStyle: const TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                      ),
+                      suffixIcon: const Icon(
+                        Icons.directions,
+                        color: blackColor,
+                      ),
+                    ),
                     style: const TextStyle(
                       fontSize: 18,
                       color: Colors.black,
